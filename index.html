@@ -8,43 +8,44 @@
 </head>
 <body>
     <head>
-        <h1>Titulo</h1>
+        <h1>Login-Helper</h1>
     </head>
     <main>
         <form>
-            <section>
-                <input type="email" name="" id="" placeholder="">
+            <section class="inputs-container">
+                <input type="email" id="email" placeholder="example@email.com">
                 
-                <div>
-                    <input type="password" name="" id="" placeholder="">
-                    <i></i>
-                    <i></i>
+                <div class="password-container">
+                    <input type="password" name="field-password" id="field-password" placeholder="********">
+                    <i class="far fa-eye" id='eye'></i>
+                    <i class="far fa-eye-slash" id='eye-slash'></i>
                 </div>
             </section>
 
-            <section>
+            <section class="password-infos">
                 <div>
-                    <input type="checkbox"><span>texto</span>
+                    <input type="checkbox">
+                    <span>Lembrar senha</span>
                 </div>
-                <a href="#">texto</a>
+                <a href="#">Esqueceu sua senha?</a>
             </section>
 
-            <button>Texto</button>
+            <button id='btn-login'>Login</button>
 
-            <section>
-                <span>text</span>
+            <section class="links-container">
+                <span>Ou entre com:</span>
             </section>
 
             <aside>
-                <a href="#"> <i></i> </a>
-                <a href="#"> <i></i> </a>
-                <a href="#"> <i></i> </a>
+                <a href="#"> <i class="fab fa-google"></i> </a>
+                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                <a href="#"> <i class="fab fa-facebook-square"></i> </a>
             </aside>
             
             <footer>
                 <hr>
-                <span>text</span>
-                <a href="#">texto</a>
+                <span>Ainda não tem uma conta?</span>
+                <a href="#">Cadastre-se</a>
             </footer>
         </form>
     </main>
