@@ -8,11 +8,15 @@
     text-decoration: none;
     color: white;
 }
-
+:root{
+    --hue: 219;
+    --back-color1: hsl(var(--hue), 37%, 56%);
+    --back-color2: hsl(var(--hue), 102%, 34%);
+}
 header{
     min-height: 9vh;
     
-    background-color: #383c42;
+    background-color: var(--back-color2);
     
     display: flex;
     justify-content: center;
@@ -26,7 +30,7 @@ header h1{
 main{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient( #5151ec,#a663fc);
+    background-image: linear-gradient( var(--back-color1),var(--back-color2) );
     background-attachment: fixed;
     
     display:flex;
